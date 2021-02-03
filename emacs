@@ -4,8 +4,6 @@
 	     '("melpa" . "http://melpa.org/packages/") t)
 (add-to-list 'package-archives
 	     '("elpa" . "http://tromey.com/elpa/") t)
-(add-to-list 'package-archives
-             '("marmalade" . "http://marmalade-repo.org/packages/") t)
 
 (package-initialize)
 (require 'cl)
@@ -13,7 +11,7 @@
 (setq-default indent-tabs-mode nil)
 
 (defvar prelude-packages
-  '(ack-and-a-half sass-mode rainbow-mode scss-mode yaml-mode auto-complete)
+  '(sass-mode rainbow-mode scss-mode yaml-mode auto-complete)
   "A list of packages to ensure are installed at launch.")
 
 (defun prelude-packages-installed-p ()
@@ -46,9 +44,10 @@
 ;;(ac-config-default)
 (add-hook 'before-save-hook 'gofmt-before-save)
 (add-to-list 'load-path "~/.emacs.d/vendor/gocode")
-(require 'go-autocomplete)
+;; FIXME go autocomplete, please
+;; (require 'go-autocomplete)
 (require 'auto-complete-config)
-(add-hook 'before-save-hook 'gofmt-before-save)
+;; (add-hook 'before-save-hook 'gofmt-before-save)
 
 (server-start)
 
@@ -64,7 +63,7 @@
   )
 
 ;; enable mouse wheel scrolling
-(mouse-wheel-mode 1)
+;; (mouse-wheel-mode 1)
 
 ;; Show line numbers
 (line-number-mode 1)
@@ -102,6 +101,7 @@
  ;; If there is more than one, they won't work right.
  )
 
+;; TODO make golint work again
 ;; golint
-(add-to-list 'load-path (concat (getenv "GOPATH")  "/src/github.com/golang/lint/misc/emacs"))
-(require 'golint)
+;; (add-to-list 'load-path (concat (getenv "GOPATH")  "/src/github.com/golang/lint/misc/emacs"))
+;; (require 'golint)
