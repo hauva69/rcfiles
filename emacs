@@ -34,9 +34,12 @@
 (provide 'prelude-packages)
 ;;; prelude-packages.el ends here
 
-(add-to-list 'load-path "~/.emacs.d/vendor/nsf")
-(add-to-list 'load-path "~/.emacs.d/vendor/inf-mongo")
-(require 'inf-mongo)
+;; commented out on 2021-02-03
+;; I don't work with mongo any more and I don't ever remember what nsf is.
+;; TODO check if I need them
+;; (add-to-list 'load-path "~/.emacs.d/vendor/nsf")
+;; (add-to-list 'load-path "~/.emacs.d/vendor/inf-mongo")
+;; (require 'inf-mongo)
 
 (require 'auto-complete)
 (global-auto-complete-mode t)
@@ -85,7 +88,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(erc-away-nickname "arskaAway")
- '(erc-email-userid "ari.makela@kauppalehti.fi")
+ '(erc-email-userid "ari.makela@iki.fi")
  '(erc-nick "arska")
  '(erc-port 6667)
  '(erc-prompt-for-password nil)
