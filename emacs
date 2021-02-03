@@ -91,9 +91,8 @@
  '(erc-nick "arska")
  '(erc-port 6667)
  '(erc-prompt-for-password nil)
- '(erc-server "irc.plenware.fi")
- '(erc-user-full-name "Ari Makela")
- '(jira-url "https://jira.crometenterprise.com/rpc/xmlrpc"))
+ '(erc-server "irc.example.com")
+ '(erc-user-full-name "Ari Makela"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
